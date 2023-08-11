@@ -40,6 +40,8 @@
             this.MinimumSize = new Size(600, 550);
 
             formService.ChangeFormLayout(FormLayout.IsDetached);
+
+            MessageStatusLabel.Text = string.Empty;
         }
 
         private void AttachButton_ClickAsync(object sender, EventArgs e)
