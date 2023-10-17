@@ -85,7 +85,7 @@ In Visual Studio, make sure that the following settings are correct in the `App.
 </appSettings>
 ```
 
-The `Server` should be the URL of your Sitecore CM server (including `https://`), and the IdentityServer should be the URL (including `https://`) of your Sitecore Identity Server. The ClientId and ClientSecret should match the one configured in the Sitecore Identity Server configuration.
+The `Server` setting should be the URL of your Sitecore CM server (including `https://`), and the `IdentityServer` setting should be the URL (including `https://`) of your Sitecore Identity Server. The `ClientId` and `ClientSecret` settings should match the one configured in the Sitecore Identity Server configuration.
 
 With these settings in place, you should be able to build and run SitecoreJobViewer, logging in using a Sitecore admin username and password. Please note the the username and password are prefilled with "admin" and "b". This can be removed or changed in the file `Form.Designer.cs` line 215 and 230.
 
