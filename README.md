@@ -99,7 +99,7 @@ If you run more than 18 jobs at the same time, you might need to adjust the MaxJ
 
 ### Sample frequency and samples to keep
 
-By default, SitecoreJobViewer will query the Sitecore server once every 2000 ms and keep 100 samples, displaying a period of 200 seconds (a bit over 3 minutes). This can be adjusted using the two settings `SampleFrequency` and `SamplesToKeep` in the Constants.cs file.
+By default, SitecoreJobViewer will query the Sitecore server once every 2000 ms and keep 100 samples, displaying a period of 200 seconds (a bit over 3 minutes). This can be adjusted using the two settings `SampleFrequency` and `SamplesToKeep` in the `Constants.cs` file.
 
 ### Job states
 
