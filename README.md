@@ -87,7 +87,9 @@ In Visual Studio, make sure that the following settings are correct in the `App.
 
 The `Server` setting should be the URL of your Sitecore CM server (including `https://`), and the `IdentityServer` setting should be the URL (including `https://`) of your Sitecore Identity Server. The `ClientId` and `ClientSecret` settings should match the one configured in the Sitecore Identity Server configuration.
 
-With these settings in place, you should be able to build and run SitecoreJobViewer, logging in using a Sitecore admin username and password. Please note the the username and password are prefilled with "admin" and "b". This can be removed or changed in the file `Form.Designer.cs` line 215 and 230.
+With these settings in place, you should be able to build and run SitecoreJobViewer, logging in using a Sitecore admin username and password and clicking *Attach*. 
+
+Please note the the username and password are prefilled with "admin" and "b". This can be removed or changed in the file `Form.Designer.cs` line 215 and 230.
 
 ## Advanced settings
 
@@ -104,6 +106,10 @@ By default, SitecoreJobViewer will query the Sitecore server once every 2000 ms 
 Per default, SitecoreJobViewer will only display jobs with the states `RUNNING`, `FINISHED` and `QUEUED`. 
 
 Sitecore has a few more job states that is ignored per default (`UNKNOWN`, `ABORTED`, `ABORTREQUESTED`, `INITIALIZING`). To display these, you need to add the job states to the `Colors` dictionary in the `Constants.cs` file, and select the colors with the user interface should use to display these job states.
+
+## Bypassing the Sitecore Identity Server
+
+If you do not wish to obtain access tokens via SitecoreJobViewer, it is possible to bypass the Sitecore Identity Server login by entering a valid access token in the Access token input field and click *Attach*.
 
 ## Read more
 
