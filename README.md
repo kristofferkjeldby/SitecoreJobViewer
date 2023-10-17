@@ -10,7 +10,7 @@ SitecoreJobViewer is a standalone Windows Forms application that allow you to mo
 
 To get started, first you need to download or clone the solution and open it in Visual Studio. Make sure that you are able to start the application.
 
-As the solution includes an icon in the Form.resx file, you will might get this error when running the solution for the first time:
+As the solution includes an icon in the `Form.resx` file, you will might get this error when running the solution for the first time:
 
 `Couldn't process file Form.resx due to its being in the Internet or Restricted zone or having the mark of the web on the file. Remove the mark of the web if you want to process these files.`
 
