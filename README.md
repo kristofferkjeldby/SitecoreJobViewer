@@ -93,7 +93,9 @@ By default, SitecoreJobViewer will query the Sitecore server once every 2000 ms 
 
 *Job states*
 
-Per default, SitecoreJobViewer will only display jobs with the states RUNNING, FINISHED AND QUEUED. Sitecore has a few more job states that is ignored per default (UNKNOWN, ABORTED, ABORTREQUESTED, INITIALIZING). To display these, you need to add the job states to the `Colors` dictionary in the `Constants.cs` file, and select the colors with the user interface should use to display these job states.
+Per default, SitecoreJobViewer will only display jobs with the states `RUNNING`, `FINISHED` and `QUEUED`. 
+
+Sitecore has a few more job states that is ignored per default (`UNKNOWN`, `ABORTED`, `ABORTREQUESTED`, `INITIALIZING`). To display these, you need to add the job states to the `Colors` dictionary in the `Constants.cs` file, and select the colors with the user interface should use to display these job states.
 
 ## Read more
 
