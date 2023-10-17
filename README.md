@@ -93,15 +93,15 @@ Please note the the username and password are prefilled with "admin" and "b". Th
 
 ## Advanced settings
 
-*Number of jobs*
+### Number of jobs
 
 If you run more than 18 jobs at the same time, you might need to adjust the MaxJobs settings in the `App.config` file. This will adjust the user interface to allow more simultaneous jobs to be displayed.
 
-*Sample frequency and samples to keep*
+### Sample frequency and samples to keep
 
 By default, SitecoreJobViewer will query the Sitecore server once every 2000 ms and keep 100 samples, displaying a period of 200 seconds (a bit over 3 minutes). This can be adjusted using the two settings `SampleFrequency` and `SamplesToKeep` in the Constants.cs file.
 
-*Job states*
+### Job states
 
 Per default, SitecoreJobViewer will only display jobs with the states `RUNNING`, `FINISHED` and `QUEUED`. 
 
