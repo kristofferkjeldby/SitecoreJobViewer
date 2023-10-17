@@ -14,7 +14,7 @@ As the solution includes an icon in the `Form.resx` file, you will might get thi
 
 `Couldn't process file Form.resx due to its being in the Internet or Restricted zone or having the mark of the web on the file. Remove the mark of the web if you want to process these files.`
 
-To resolve the error, find the Form.resx file in File Explorer and right click it, select *Properties* and the select *Unblock* under *General*.
+To resolve the error, find the `Form.resx` file in File Explorer and right click it, select *Properties* and the select *Unblock* under *General*.
 
 ### Configuring Sitecore
 
