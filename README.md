@@ -67,7 +67,7 @@ As the SitecoreJobViewer will need to obtain access tokens from the Sitecore Ide
 
 ### Configuring SitecoreJobViewer
 
-In Visual Studio, make sure that the following settings are correct:
+In Visual Studio, make sure that the following settings are correct in the `App.config` file:
 
 <appSettings>
   <add key="Server" value="your-server" />
@@ -77,10 +77,26 @@ In Visual Studio, make sure that the following settings are correct:
   <add key="MaxJobs" value="18" />
 </appSettings>
 
-The `Server` should be the URL of your Sitecore CM server, and the IdentityServer should be the URL of your Sitecore Identity Server. The ClientId and ClientSecret should match the one configured in the Sitecore Identity Server configuration
+The `Server` should be the URL of your Sitecore CM server, and the IdentityServer should be the URL of your Sitecore Identity Server. The ClientId and ClientSecret should match the one configured in the Sitecore Identity Server configuration.
 
 With these settings in place, you should be able to build and run SitecoreJobViewer, logging in using a Sitecore admin username and password.
 
+## Advanced settings
+
+*Number of jobs*
+
+If you run more than 18 jobs at the same time, you might need to adjust the MaxJobs settings in the `App.config` file. This will adjust the user interface to allow more simultaneous jobs to be displayed.
+
+*Sample frequency and samples to keep*
+
+By default, SitecoreJobViewer will query the Sitecore server once every 2000 ms and keep 100 samples, displaying a period of 200 seconds (a bit over 3 minutes). This can be adjusted using the two settings `SampleFrequency` and `SamplesToKeep` in the Constants.cs file.
+
+*Job states*
+
+Per default, SitecoreJobViewer will only display jobs with the states RUNNING, FINISHED AND QUEUED. Sitecore has a few more job states that is ignored per default (UNKNOWN, ABORTED, ABORTREQUESTED, INITIALIZING). To display these, you need to add the job states to the `Colors` dictionary in the `Constants.cs` file, and select the colors with the user interface should use to display these job states.
+
 ## Read more
 
-For an introduction to the job viewer, please read this blog: https://www.kjeldby.dk/2023/08/custom-sitecore-job-viewer/
+For an introduction to the job viewer, please read this blog: https://www.kjeldby.dk/2023/08/custom-sitecore-job-viewer/.
+
+I have also recorded a video covering the same topic: https://www.kjeldby.dk/2023/08/custom-sitecore-job-viewer-video/.
