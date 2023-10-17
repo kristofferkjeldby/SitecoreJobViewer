@@ -18,7 +18,7 @@ To resolve the error, find the `Form.resx` file in File Explorer and right click
 
 ### Configuring Sitecore
 
-Next, make sure that the The Authoring and Management API is enabled on the Sitecore instance you want to connect to. In a CM/CD this will be the CM server. The endpoint is enabled using this setting:
+Next, make sure that the Authoring and Management API is enabled on the Sitecore instance you want to connect to. In a CM/CD this will be the CM server. The endpoint is enabled using this setting:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
